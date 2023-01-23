@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <script src="/dedayo/index.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script&family=Lilita+One&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAV BAR -->
+    <div
+      class="sticky top-0 bg-black h-[60px] w-[100%] flex justify-center items-center"
+    >
+      <ul class="flex text-white space-x-4 lg:space-x-16 lg:text-2xl">
+        <li class=""><a href="/">HOME</a></li>
+        <li class=""><a href="/collections.html">COLLECTIONS</a></li>
+        <li class=""><a href="/about.html">ABOUT</a></li>
+      </ul>
+    </div>
+    <!-- NAV BAR -->
+
+    <div
+      style="background-image: url(./Images/samsung-605439_1920.jpg)"
+      class="w-[100%] h-[400px] bg-center bg-cover bg-no-repeat mt-[3px] lg:h-[500px]"
+    >
+      <div
+        class="pt-[10px] text-center text-white text-6xl font-bold font-[VT323] lg:text-8xl"
+      >
+        DEDAYORRR
+      </div>
+      <div class="flex justify-center items-center mt-[20px]">
+        <button
+          style="background-color: rgba(221, 219, 219, 0.611)"
+          class="text-2xl rounded-md w-[80%] h-[70px] text-blue-500 lg:text-4xl lg:w-[30%]"
+        >
+          See latest Arrivals
+        </button>
+      </div>
+      <div class="flex justify-center mt-[20px]">
+        <button class="bg-white rounded-lg w-[60px] h-[50px]">
+          <iconify-icon
+            icon="material-symbols:play-arrow-rounded"
+            style="color: blue"
+            width="50"
+            height="50"
+          ></iconify-icon>
+        </button>
+      </div>
+    </div>
+
+    <!-- TABLE START -->
+    <div class="mb-[30px]">
+      <p class="text-center text-4xl font-bold font-[VT323] lg:text-6xl">
+        Events
+      </p>
+      <div class="overflow-x-auto lg:flex lg:justify-center">
+        <table class="mt-[40px]">
+          <tbody class="table-auto divide-y divide-black">
+            <tr class="flex gap-[px]">
+              <td class="w-[200px] h-[40px]">August 22</td>
+              <td class="w-[200px] h-[40px]">August 22</td>
+              <td class="w-[200px] h-[40px]">August 22</td>
+              <td class="w-[200px] h-[40px]">
+                <button
+                  class="rounded-md w-[80px] h-[30px] bg-black hover:bg-slate-500 text-white text-sm"
+                >
+                  Buy Ticket
+                </button>
+              </td>
+            </tr>
+            <tr class="flex gap-[px]">
+              <td class="w-[200px] pt-[10px] pb-[10px]">September 19</td>
+              <td class="w-[200px] pt-[10px] pb-[10px]">September 19</td>
+              <td class="w-[200px] pt-[10px] pb-[10px]">September 19</td>
+              <td class="w-[200px] pt-[10px] pb-[10px]">
+                <button
+                  class="rounded-md w-[80px] h-[30px] bg-black hover:bg-slate-500 text-white text-sm"
+                >
+                  Buy Ticket
+                </button>
+              </td>
+            </tr>
+            <tr class="flex gap-[px]">
+              <td class="w-[200px] pt-[10px] pb-[10px]">October 30</td>
+              <td class="w-[200px] pt-[10px] pb-[10px]">October 30</td>
+              <td class="w-[200px] pt-[10px] pb-[10px]">October 30</td>
+              <td class="w-[200px] pt-[10px] pb-[10px]">
+                <button
+                  class="rounded-md w-[80px] h-[30px] bg-black hover:bg-slate-500 text-white text-sm"
+                >
+                  Buy Ticket
+                </button>
+              </td>
+            </tr>
+            <tr class="flex gap-[px]">
+              <td class="w-[200px] pt-[10px] pb-[10px]">November 3</td>
+              <td class="w-[200px] pt-[10px] pb-[10px]">November 3</td>
+              <td class="w-[200px] pt-[10px] pb-[10px]">November 3</td>
+              <td class="w-[200px] pt-[10px] pb-[10px]">
+                <button
+                  class="rounded-md w-[80px] h-[30px] bg-black hover:bg-slate-500 text-white text-sm"
+                >
+                  Buy Ticket
+                </button>
+              </td>
+            </tr>
+            <tr class="flex gap-[px]">
+              <td class="w-[200px] pt-[10px] pb-[10px]">December 25</td>
+              <td class="w-[200px] pt-[10px] pb-[10px]">December 25</td>
+              <td class="w-[200px] pt-[10px] pb-[10px]">December 25</td>
+              <td class="w-[200px] pt-[10px] pb-[10px]">
+                <button
+                  class="rounded-md w-[80px] h-[30px] bg-black hover:bg-slate-500 text-white text-sm"
+                >
+                  Buy Ticket
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- TABLE END -->
+
+    <!-- FOOTER -->
+    <footer
+      class="bg-black h-[60px] w-[100%] flex justify-center items-center lg:h-[100px]"
+    >
+      <div class="flex space-x-16">
+        <div class="text-white text-2xl font-[VT323] lg:text-5xl">
+          DEDAYORRR
+        </div>
+        <div class="flex items-center space-x-2">
+          <iconify-icon
+            icon="uil:youtube"
+            style="color: white"
+            width="20"
+          ></iconify-icon>
+          <iconify-icon
+            icon="ph:instagram-logo-light"
+            style="color: white"
+            width="20"
+          ></iconify-icon>
+          <iconify-icon
+            icon="typcn:social-twitter"
+            style="color: white"
+            width="20"
+          ></iconify-icon>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
