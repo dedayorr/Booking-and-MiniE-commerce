@@ -26,6 +26,7 @@ function render() {
 
   const removeCartItemBtn =
     document.getElementsByClassName("cart-items-remove");
+    console.log(removeCartItemBtn)
   for (let i = 0; i < removeCartItemBtn.length; i++) {
     const cartItemElement = removeCartItemBtn[i];
     //add event listeer to each btn
@@ -108,6 +109,7 @@ function addToCart(title, price, imageSrc) {
   cart.appendChild(tr);
 
   updatedCartTotal()
+
 }
 
 // update cart total
@@ -142,7 +144,7 @@ console.log(totalPrice, "total");
 function inputChanged(e) {
     const input = e.target;
   
-    console.log(isNaN(input.value), "isNaN(input.value)");
+    // console.log(isNaN(input.value), "isNaN(input.value)");
   
     if (input.value < 1) {
       input.value = 1;
@@ -152,12 +154,11 @@ function inputChanged(e) {
   
   function removeCartItem(e) {
     const removeBtn = e.target;
-    const decision = confirm("Are you sure about reovng this item?");
+    const decision = confirm("Are you sure about removing this item?");
     console.log(decision, "decision");
     if (!decision) {
       return;
     }
-  
     removeBtn.parentElement.parentElement.remove();
   
     updatedCartTotal();
