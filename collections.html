@@ -215,7 +215,7 @@
             <th>PRICE</th>
             <th>QUANTITY</th>
           </thead>
-          <tbody class="tablebody w-[100%] mx-auto">
+          <tbody class="cart-table w-[100%] mx-auto">
             <tr class="cart-items ">
                 <td class="flex justify-center items-center">
                     <img class="w-[70px] h-[70px]" src="/images/musicalseven.jpeg" alt="" />
@@ -223,13 +223,9 @@
                   </td>
                   <td class="cart-items-price text-center">₦4000</td>
                   <td class="flex justify-center items-center mb-[40px] gap-[6px]">
-                    <input
-                      class="cart-items-qty bg-slate-500 w-[5px] pl-[10%]"
-                      type="number"
-                     placeholder="1"
-                    />
+                   <input class="item-qty w-[50px] border" type="number" value="1" id="number-input">
                     <button
-                      class="cart-items-remove bg-red-500 rounded w-[90px] hover:bg-red-200"
+                      class="remove-button bg-red-500 rounded w-[90px] hover:bg-red-200"
                     >
                       REMOVE
                     </button>
@@ -245,17 +241,14 @@
               </td>
               <td class="cart-items-price text-center">₦4000</td>
               <td class="flex justify-center items-center mb-[40px] gap-[6px]">
-                <input
-                  class="cart-items-qty bg-slate-500 w-[5px] pl-[10%]"
-                  type="number"
-                  value="1"
-                />
+                <input class="item-qty w-[50px] border" type="number" value="1" id="number-input">
                 <button
-                  class="cart-items-remove bg-red-500 rounded w-[90px] hover:bg-red-200"
+                  class="remove-button bg-red-500 rounded w-[90px] hover:bg-red-200"
                 >
                   REMOVE
                 </button>
-              </td></tr>
+              </td>
+            </tr> 
 
             <tr
               class="cart-items"
@@ -266,17 +259,14 @@
               </td>
               <td class="cart-items-price text-center">₦4000</td>
               <td class="flex justify-center items-center mb-[40px] gap-[6px]">
-                <input
-                  class="cart-items-qty bg-slate-500 w-[5px] pl-[10%]"
-                  type="number"
-                  value="1"
-                />
+                <input class="item-qty w-[50px] border" type="number" value="1" id="number-input">
                 <button
-                  class="cart-items-remove bg-red-500 rounded w-[90px] hover:bg-red-200"
+                  class="remove-button bg-red-500 rounded w-[90px] hover:bg-red-200"
                 >
                   REMOVE
                 </button>
-              </td></tr>
+              </td>
+            </tr> 
 
             <tr
               class="cart-items "
@@ -287,17 +277,14 @@
               </td>
               <td class="cart-items-price text-center">₦4000</td>
               <td class="flex justify-center items-center mb-[40px] gap-[6px]">
-                <input
-                  class="cart-items-qty bg-slate-500 w-[5px] pl-[10%]"
-                  type="number"
-                  value="1"
-                />
+                <input class="item-qty w-[50px] border" type="number" value="1" id="number-input">
                 <button
-                  class="cart-items-remove bg-red-500 rounded w-[90px] hover:bg-red-200"
+                  class="remove-button bg-red-500 rounded w-[90px] hover:bg-red-200"
                 >
                   REMOVE
                 </button>
-              </td></tr>
+              </td>
+            </tr> 
 
             <tr
               class="cart-items "
@@ -308,17 +295,14 @@
               </td>
               <td class="cart-items-price text-center">₦4000</td>
               <td class="flex justify-center items-center mb-[40px] gap-[6px]">
-                <input
-                  class="cart-items-qty bg-slate-500 w-[5px] pl-[10%]"
-                  type="number"
-                  value="1"
-                />
+                <input class="item-qty w-[50px] border" type="number" value="1" id="number-input">
                 <button
-                  class="cart-items-remove bg-red-500 rounded w-[90px] hover:bg-red-200"
+                  class="remove-button bg-red-500 rounded w-[90px] hover:bg-red-200"
                 >
                   REMOVE
                 </button>
-              </td></tr>
+              </td>
+            </tr> 
 
             <tr
               class="cart-items"
@@ -329,17 +313,14 @@
               </td>
               <td class="cart-items-price text-center">₦4000</td>
               <td class="flex justify-center items-center mb-[40px] gap-[6px]">
-                <input
-                  class="cart-items-qty bg-slate-500 w-[5px] pl-[10%]"
-                  type="number"
-                  value="1"
-                />
+                <input class="item-qty w-[50px] border" type="number" value="1" id="number-input">
                 <button
-                  class="cart-items-remove bg-red-500 rounded w-[90px] hover:bg-red-200"
+                  class="remove-button bg-red-500 rounded w-[90px] hover:bg-red-200"
                 >
                   REMOVE
                 </button>
-              </td></tr>
+              </td>
+            </tr>
 
             <tr class="cart-items gap-[30px] w-[100%]">
               <td class="flex justify-center items-center">
@@ -348,13 +329,9 @@
               </td>
               <td class="cart-items-price text-center">₦4000</td>
               <td class="flex justify-center items-center mb-[40px] gap-[6px]">
-                <input
-                  class="cart-items-qty bg-slate-500 w-[5px] pl-[10%]"
-                  type="number"
-                  value="1"
-                />
+                <input class="item-qty w-[50px] border" type="number" value="1" id="number-input">
                 <button
-                  class="cart-items-remove bg-red-500 rounded w-[90px] hover:bg-red-200"
+                  class="remove-button bg-red-500 rounded w-[90px] hover:bg-red-200"
                 >
                   REMOVE
                 </button>
@@ -365,11 +342,11 @@
       </div>
     </div>
 
-    <div class="cart-total text-4xl font-bold text-center"></div>
+    <div class="cart-total text-4xl font-bold text-center">Total: ₦0 </div>
     <br />
     <div class="flex justify-center mb-[30px]">
       <button
-        class="cart-item-purshase bg-blue-700 text-white font-bold text-2xl rounded-md w-[180px] h-[60px]"
+        class="purchase-button bg-blue-700 text-white font-bold text-2xl rounded-md w-[180px] h-[60px]"
       >
         PURCHASE
       </button>
@@ -406,3 +383,5 @@
     <script src="/script.js"></script>
   </body>
 </html>
+
+
