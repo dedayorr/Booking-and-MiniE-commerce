@@ -1,4 +1,3 @@
-
 // check that the document is done loading before interaction of DOM
 if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", render);
@@ -94,33 +93,55 @@ function addedItemsToCart(title, price, imageSrc) {
 }
 
 // To update the total price of items
-function updateCartTotal() {
+const updateCartTotal = () => {
   const cartTable = document.getElementsByClassName("cart-table")[0];
   console.log(cartTable);
-  const cartRows = cartTable.getElementsByClassName("cart-items");
+  const cartRows = cartTable.querySelectorAll(".cart-items");
   console.log(cartRows, "show");
-  let total = 0;
+
+  // const rest = cartRows && cartRows.map((element)=> ({
+  //   price:parseFloat(element.getElementsByClassName("cart-items-price")[0].textContent),
+  //   qty:Number(element.getElementsByClassName("item-qty")[0].value)
+  // }))
+
   for (let i = 0; i < cartRows.length; i++) {
+    let total = 0;
+    console.log(total);
     const cartRow = cartRows[i];
     const priceElement = cartRow.getElementsByClassName("cart-items-price")[0];
-    // console.log(priceElement)
+    console.log(priceElement);
     const quantityElement = cartRow.getElementsByClassName("item-qty")[0];
-    // console.log(quantityElement)
-    const price = parseFloat(priceElement.textContent.replace("₦", ""));
-    const quantity = quantityElement.value;
-   // console.log(quantity, "here");
-    console.log(total + price * quantity, "price");
+    console.log(quantityElement);
+    let price;
+    if (priceElement) {
+      price = parseFloat(priceElement.textContent.replace("₦", ""));
+    }
+    let quantity;
+    if (quantityElement) {
+      quantity = parseInt(quantityElement.value);
+    }
+    //
+    console.log(typeof price);
+    console.log(typeof quantity);
 
-     total = total + price * quantity;
+    // console.log(quantity, "here");
+    // console.log(total + price * quantity, "price");
+    console.log(total, price, quantity);
+    total = Number(total) + Number(price) * Number(quantity);
+    console.log(total);
+    finalTotal(total);
   }
-  //console.log(total, "here");
-  grandtotal = Math.round(total * 100) / 100;
-  console.log(grandtotal);
-  const Total = document.getElementsByClassName(
-    "cart-total"
-  )[0].textContent = `Total: ₦${grandtotal}`;
-  console.log(grandtotal, "show");
-}
+
+  function finalTotal(total) {
+    console.log(total, "here");
+    grandtotal = Math.round(total * 100) / 100;
+    console.log(grandtotal);
+    const Total = (document.getElementsByClassName(
+      "cart-total"
+    )[0].textContent = `Total: ₦${grandtotal}`);
+    console.log(grandtotal, "show");
+  }
+};
 
 function purchaseItems() {
   alert("Thank you for your purchase");
